@@ -18,13 +18,14 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             Console.WriteLine(FixCase()) ;
-            Console.ReadLine();
             Console.WriteLine(RollDice());
+            Console.ReadLine();
         }
 
         /// <summary>
         /// asks user for sentence,
         /// returns string with first letter capitalized
+        /// sofia rivas
         /// </summary>
         /// <returns></returns>
         public static string FixCase()
