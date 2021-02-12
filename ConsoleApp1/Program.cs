@@ -28,6 +28,7 @@ namespace ConsoleApp1
         /// <summary>
         /// asks user for sentence,
         /// returns string with first letter capitalized
+        /// sofia rivas
         /// </summary>
         /// <returns></returns>
         public static string FixCase()
@@ -38,6 +39,10 @@ namespace ConsoleApp1
 
         }
 
+        /// <summary>
+        /// Rolls a set of die
+        /// </summary>
+        /// <returns></returns>
         public static int RollDice()
         {
             int totalSum = 0;
