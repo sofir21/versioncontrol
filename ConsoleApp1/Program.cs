@@ -18,7 +18,9 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             Console.WriteLine(RollDice());
-            Console.WriteLine(FixCase()) ;
+            Console.WriteLine();
+            Console.WriteLine(FixCase());
+            Console.WriteLine();
             LargestOfThree();
             Console.ReadLine();
         }
@@ -55,21 +57,21 @@ namespace ConsoleApp1
             int highestNum;
             int currentNum;
 
-            Console.WriteLine("Welcome to the Largest Of Three! Enter three numbers!");
+            Console.Write("Welcome to the Largest Of Three! Enter three numbers!");
 
-            Console.WriteLine("1st Number: ");
-            currentNum = int.Parse(Console.Readline());
+            Console.Write("1st Number: ");
+            currentNum = int.Parse(Console.ReadLine());
             highestNum = currentNum;
 
-            Console.WriteLine("2nd Number: ");
-            currentNum = int.Parse(Console.Readline());
+            Console.Write("2nd Number: ");
+            currentNum = int.Parse(Console.ReadLine());
             if (currentNum > highestNum)
             {
                 highestNum = currentNum;
             }
 
-            Console.WriteLine("3rd Number: ");
-            currentNum = int.Parse(Console.Readline());
+            Console.Write("3rd Number: ");
+            currentNum = int.Parse(Console.ReadLine());
             if (currentNum > highestNum)
             {
                 highestNum = currentNum;
