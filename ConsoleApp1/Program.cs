@@ -9,9 +9,6 @@ using System.Threading.Tasks;
 
 //Sofia Rivas
 
-
-
-
 namespace ConsoleApp1
 {
     class Program
