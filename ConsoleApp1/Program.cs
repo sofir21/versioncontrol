@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 // Riley Procopio
 
 
+//This is a comment - Josh
 
 //Sofia Rivas
 
@@ -17,6 +18,20 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            Console.WriteLine(FixCase()) ;
+            Console.ReadLine();
+        }
+
+        /// <summary>
+        /// asks user for sentence,
+        /// returns string with first letter capitalized
+        /// </summary>
+        /// <returns></returns>
+        public static string FixCase()
+        {
+            Console.WriteLine("Provide the string youd like to capitalize:");
+            string input = Console.ReadLine();
+            return input.First().ToString().ToUpper() + input.Substring(1).ToLower();
             Console.WriteLine("Hello World!");
             LargestOfThree();
 
@@ -51,5 +66,6 @@ namespace ConsoleApp1
                 Console.WriteLine("The highest number was " + highestNum + "!");
             }
         }
+
     }
 }
