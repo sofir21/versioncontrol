@@ -19,6 +19,7 @@ namespace ConsoleApp1
         {
             Console.WriteLine(FixCase()) ;
             Console.ReadLine();
+            Console.WriteLine(RollDice());
         }
 
         /// <summary>
@@ -31,23 +32,24 @@ namespace ConsoleApp1
             Console.WriteLine("Provide the string youd like to capitalize:");
             string input = Console.ReadLine();
             return input.First().ToString().ToUpper() + input.Substring(1).ToLower();
-            Console.WriteLine("Hello World!");
-
-            Console.WriteLine(RollDice());
-
-            static int RollDice()
-            {
-                int totalSum = 0;
-                Random rng = new Random();
-                for(int i = 0; i < 5; i++)
-                {
-                    int dieRoll = rng.Next(1, 21);
-                    totalSum = totalSum + dieRoll;
-                }
-
-                return totalSum;
-            }
+            
         }
 
+        /// <summary>
+        /// Rolls a set of die
+        /// </summary>
+        /// <returns></returns>
+        public static int RollDice()
+        {
+            int totalSum = 0;
+            Random rng = new Random();
+            for(int i = 0; i < 5; i++)
+            {
+                int dieRoll = rng.Next(1, 21);
+                totalSum = totalSum + dieRoll;
+            }
+
+            return totalSum;
+        }
     }
 }
