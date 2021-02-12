@@ -17,7 +17,9 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            Console.WriteLine(RollDice());
             Console.WriteLine(FixCase()) ;
+            LargestOfThree();
             Console.ReadLine();
         }
 
@@ -31,27 +33,20 @@ namespace ConsoleApp1
             Console.WriteLine("Provide the string youd like to capitalize:");
             string input = Console.ReadLine();
             return input.First().ToString().ToUpper() + input.Substring(1).ToLower();
-            Console.WriteLine("Hello World!");
 
-            Console.WriteLine(RollDice());
+        }
 
-            static int RollDice()
+        public static int RollDice()
+        {
+            int totalSum = 0;
+            Random rng = new Random();
+            for(int i = 0; i < 5; i++)
             {
-                int totalSum = 0;
-                Random rng = new Random();
-                for(int i = 0; i < 5; i++)
-                {
-                    int dieRoll = rng.Next(1, 21);
-                    totalSum = totalSum + dieRoll;
-                }
-
-                return totalSum;
+                int dieRoll = rng.Next(1, 21);
+                totalSum = totalSum + dieRoll;
             }
-            Console.WriteLine("Hello World!");
-            LargestOfThree();
 
-            Console.ReadLine();
-
+            return totalSum;
         }
 
         // Asks the user for three numbers and finds the highest of the three
