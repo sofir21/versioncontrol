@@ -18,12 +18,14 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             Console.WriteLine(FixCase()) ;
+            Console.WriteLine(RollDice());
             Console.ReadLine();
         }
 
         /// <summary>
         /// asks user for sentence,
         /// returns string with first letter capitalized
+        /// sofia rivas
         /// </summary>
         /// <returns></returns>
         public static string FixCase()
@@ -31,23 +33,23 @@ namespace ConsoleApp1
             Console.WriteLine("Provide the string youd like to capitalize:");
             string input = Console.ReadLine();
             return input.First().ToString().ToUpper() + input.Substring(1).ToLower();
-            Console.WriteLine("Hello World!");
+        
 
-            Console.WriteLine(RollDice());
-
-            static int RollDice()
-            {
-                int totalSum = 0;
-                Random rng = new Random();
-                for(int i = 0; i < 5; i++)
-                {
-                    int dieRoll = rng.Next(1, 21);
-                    totalSum = totalSum + dieRoll;
-                }
-
-                return totalSum;
-            }
+            
         }
 
+        //josh meyer
+        static int RollDice()
+        {
+            int totalSum = 0;
+            Random rng = new Random();
+            for (int i = 0; i < 5; i++)
+            {
+                int dieRoll = rng.Next(1, 21);
+                totalSum = totalSum + dieRoll;
+            }
+
+            return totalSum;
+        }
     }
 }
