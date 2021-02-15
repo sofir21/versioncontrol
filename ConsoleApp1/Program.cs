@@ -11,6 +11,8 @@ using System.Threading.Tasks;
 
 //Sofia Rivas
 
+// Gian Aponte
+
 namespace ConsoleApp1
 {
     class Program
