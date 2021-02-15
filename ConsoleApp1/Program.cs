@@ -51,8 +51,9 @@ namespace ConsoleApp1
         {
             int totalSum = 0;
             Random rng = new Random();
-            for(int i = 0; i < 5; i++)
+            for(int i = 0; i < 6; i++)
             {
+                //Using "21" since the outer boundary is exclusive
                 int dieRoll = rng.Next(1, 21);
                 totalSum = totalSum + dieRoll;
             }
