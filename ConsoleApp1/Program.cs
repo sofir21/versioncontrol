@@ -24,6 +24,8 @@ namespace ConsoleApp1
             Console.WriteLine(FixCase());
             Console.WriteLine();
             LargestOfThree();
+            Console.WriteLine();
+            IsEvenOrOdd();
             Console.ReadLine();
         }
 
@@ -85,6 +87,24 @@ namespace ConsoleApp1
             }
 
             Console.WriteLine("The highest number was " + highestNum + "!");
+        }
+
+        // Ask the user for a number and tell them whether it's odd or even
+        public static void IsEvenOrOdd()
+        {
+            int input;
+
+            Console.WriteLine("Enter a number: ");
+            input = int.Parse(Console.ReadLine());
+
+            if (input % 2 == 0)
+            {
+                Console.WriteLine("The number is even");
+            }
+            else
+            {
+                Console.WriteLine("The number is odd");
+            }
         }
 
     }
